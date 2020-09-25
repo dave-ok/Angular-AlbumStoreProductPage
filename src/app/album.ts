@@ -1,17 +1,8 @@
-export interface Album {
-  id: number,
-  artist: string,
-  album: {
-    name: string,
-    realeaseDate: string,
-    coverImage: string,
-    tracks: [Track]
-  }
-}
+import { Track } from './track';
 
-interface Track {
-  trackNumber: number,
-  trackName: string,
-  trackLength: string,
-  trackPrice: number,
+export interface Album {
+  name: string;
+  releaseDate: string;
+  coverImage: string;
+  tracks: Track[];
 }
